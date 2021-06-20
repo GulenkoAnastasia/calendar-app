@@ -1,0 +1,24 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app div:first-child {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.app button {
+  background: url(./svg/arrow-left2.svg) center no-repeat;
+  background-size: 23px 20px;
+  border: none;
+  width: 40px;
+  height: 23px;
+}
+
+.app button:last-child{
+  background: url(./svg/arrow-right2.svg) center no-repeat;
+  background-size: 23px 20px;
+}
