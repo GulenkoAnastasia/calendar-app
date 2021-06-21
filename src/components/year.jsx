@@ -2,10 +2,10 @@ import React from "react";
 
 export const Year = function(props) {
     const handlePrevClick = () => {
-        props.onPrevClick(props.number);
+        props.onYearChange(props.number - 1);
     }
     const handleNextClick = () => {
-        props.onNextClick(props.number);
+        props.onYearChange(props.number + 1);
     }
    
     return (

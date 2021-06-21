@@ -5,12 +5,10 @@ import "../styles.css"
 export const App = function() {
   const [currentYear, setYear] = React.useState(2021)
 
-  const changeToPrevYear = function() {
-    setYear(currentYear - 1);
+  const handleYearChange = function(yearNumber) {
+    setYear(yearNumber);
   }
-  const changeToNextYear = function() {
-    setYear(currentYear + 1);
-  }
+
   const date = new Date(currentYear, 10, 10);
   const month = date.toLocaleString('default', { month: 'long' });
 
@@ -18,8 +16,7 @@ export const App = function() {
     <div className="app">
       <Year
       number={currentYear}
-      onPrevClick={changeToPrevYear}
-      onNextClick={changeToNextYear}
+      onYearChange={handleYearChange}
       />
       <Month
       number={month}
