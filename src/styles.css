@@ -1,9 +1,12 @@
+* {
+  box-sizing: border-box;
+}
 .app {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.app div:first-child {
+.year {
     display: flex;
     justify-content: space-between;
     width: 200px;
@@ -18,7 +21,39 @@
   height: 23px;
 }
 
-.app button:last-child{
+.app button:last-child {
   background: url(./svg/arrow-right2.svg) center no-repeat;
   background-size: 23px 20px;
+}
+.dayName {
+  list-style: none;
+  display: flex;
+  width: 270px;
+  justify-content: space-between;
+  padding-inline-start: 0px;
+}
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+.grey {
+  background: gainsboro;
+  color: grey;
+}
+.red {
+  background: rgb(145, 143, 143);
+  color: white;
+}
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+}
+.month{
+  color: red;
+  font-size: 20px;
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
 }

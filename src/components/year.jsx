@@ -9,11 +9,10 @@ export const Year = function(props) {
     }
    
     return (
-        <div>
-       <button onClick={handlePrevClick}></button>
-       <div style={{fontWeight: 600, fontSize: "20px"}}>{props.number}</div>
-       <button onClick={handleNextClick}></button>
-        </div>
-
-    )
+      <div className="year">
+        <button onClick={handlePrevClick}></button>
+        <div style={{ fontWeight: 600, fontSize: "20px" }}>{props.number}</div>
+        <button onClick={handleNextClick}></button>
+      </div>
+    );
 };
