@@ -1,5 +1,5 @@
 import React from "react";
-import { Year, Month, Day } from "./index.js"; 
+import { Year, Month, Day } from "./index"; 
 import "../styles.css"
 
 export const App = function() {
