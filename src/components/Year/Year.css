@@ -1,0 +1,11 @@
+.year {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    color: red;
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    font-weight: 600;
+    
+}

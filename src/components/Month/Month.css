@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+.month{
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .month-list {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .month-list > div {
+      width: 22%;
+
+  }
+  .day-list {
+      display: flex;
+      flex-wrap: wrap;
+
+  }
+  .day-list > div {
+      width: 14%;
+  }
+
+  .cell {
+   text-align: center;
+  }
+  .grey {
+    background: gainsboro;
+    color: grey;
+  }
+  .red {
+    background: rgb(145, 143, 143);
+    color: white;
+  }
+  .monthName {
+      color: lightcoral;
+      font-weight: 600;
+  }
+ .cell {
+     border: 1px solid gray;
+     font-size: 12px;
+ }
