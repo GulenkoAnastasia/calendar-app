@@ -13,6 +13,7 @@
   .month-list {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
   }
 
   .month-list > div {
