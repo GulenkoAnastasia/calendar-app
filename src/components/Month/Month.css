@@ -30,6 +30,7 @@
 
   .cell {
    text-align: center;
+   font-size: 12px;
   }
   .grey {
     background: gainsboro;
@@ -38,13 +39,12 @@
   .red {
     background: rgb(145, 143, 143);
     color: white;
+    border: 1px solid gray;
   }
   .monthName {
       color: lightcoral;
+      text-transform: uppercase;
       font-weight: 600;
       text-align: center;
+      font-size: 13px;
   }
- .cell {
-     border: 1px solid gray;
-     font-size: 12px;
- }
