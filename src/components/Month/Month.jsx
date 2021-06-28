@@ -39,16 +39,17 @@ export const Month = function({year, month}) {
   return (
     <div className="month">
       <div className="monthName">{monthName}</div>
-      <div className="day-list">
       <DaysName />
-        {days.arrOfDaysInPrevMonth.map((day) => {
-          return <div className="cell grey">{day}</div>;
+      <div className="day-list">
+      
+        {days.arrOfDaysInPrevMonth.map((day, index) => {
+          return <div key={index} className="cell grey">{day}</div>;
         })}
-        {days.arrOfDaysInMonth.map((day) => {
-          return <div className="cell red">{day}</div>;
+        {days.arrOfDaysInMonth.map((day, index) => {
+          return <div key={index} className="cell red">{day}</div>;
         })}
-        {days.arrOfDaysInNextMonth.map((day) => {
-          return <div className="cell grey">{day}</div>;
+        {days.arrOfDaysInNextMonth.map((day, index) => {
+          return <div key={index} className="cell grey">{day}</div>;
         })}
       </div>
     </div>

@@ -1,14 +1,11 @@
 import "./DaysName.css"
 export const DaysName = () => {
+  const days = ['Su', 'Mo', 'Th', 'We', 'Tu', 'Fr', 'Sa'];
   return (
-    <ul className="dayName">
-      <li>Su</li>
-      <li>Mo</li>
-      <li>Th</li>
-      <li>We</li>
-      <li>Tu</li>
-      <li>Fr</li>
-      <li>Sa</li>
-    </ul>
+    <div className="dayName">
+      {days.map((day, index) => {
+        return <div key={index}>{day}</div>
+      })}
+    </div>
   );
 }

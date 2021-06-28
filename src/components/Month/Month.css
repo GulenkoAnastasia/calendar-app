@@ -42,6 +42,7 @@
   .monthName {
       color: lightcoral;
       font-weight: 600;
+      text-align: center;
   }
  .cell {
      border: 1px solid gray;
