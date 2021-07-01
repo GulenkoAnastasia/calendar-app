@@ -1,6 +1,7 @@
 import React from "react";
 import { Month } from "../index";
-import "./Year.css"
+import "./Year.css";
+
 
 export const Year = function (props) {
 
@@ -16,14 +17,17 @@ export const Year = function (props) {
   return (
   <div>
     <div className="year">
-      <button onClick={() => {onYearChange(year - 1)}}></button>
+      <button onClick={() => {onYearChange(Number(year) - 1)}}></button>
       <div>{year}</div>
-      <button onClick={() => {onYearChange(year + 1)}}></button>
+      <button onClick={() => {onYearChange(Number(year) + 1)}}></button>
     </div>
 
     <div className ="month-list">
       {months.map((month) => {
-        return  <Month year={year} key={month} month={month}></Month>
+        return (
+        
+          <Month year={year} key={month} month={month}></Month>
+        )
       })}
     </div>
   </div>

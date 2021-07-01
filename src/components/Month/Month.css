@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+}
+
 .month{
     display: flex;
     flex-direction: column;
@@ -8,44 +12,41 @@
     justify-content: space-between;
     margin-left: 10px;
     margin-bottom: 10px;
-  }
+}
 
-  .month-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
+.month-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-  .month-list > div {
-      width: 22%;
+.month-list > div {
+    width: 22%;
+}
 
-  }
-  .day-list {
-      display: flex;
-      flex-wrap: wrap;
-
-  }
-  .day-list > div {
-      width: 14%;
-  }
-
-  .cell {
+.cell {
    text-align: center;
    font-size: 12px;
-  }
-  .grey {
+}
+
+.grey {
     background: gainsboro;
     color: grey;
-  }
-  .red {
+    border: 1px solid lightgray;
+}
+.red {
     background: rgb(145, 143, 143);
     color: white;
     border: 1px solid gray;
   }
-  .monthName {
-      color: lightcoral;
-      text-transform: uppercase;
-      font-weight: 600;
-      text-align: center;
-      font-size: 13px;
+.monthName {
+    color: lightcoral;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    font-size: 13px;
   }
+
+.monthName:hover {
+    color: red;
+}

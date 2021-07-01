@@ -9,3 +9,16 @@
     font-weight: 600;
     
 }
+
+.year button {
+    background: url(./svg/arrow-left2.svg) center no-repeat;
+    background-size: 23px 20px;
+    border: none;
+    width: 40px;
+    height: 23px;
+}
+  
+.year button:last-child {
+    background: url(./svg/arrow-right2.svg) center no-repeat;
+    background-size: 23px 20px;
+}
