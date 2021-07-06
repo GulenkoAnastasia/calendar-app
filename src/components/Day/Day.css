@@ -5,3 +5,28 @@
     opacity: 80%;
     color: white;
 }
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    height: 23px;
+ 
+}
+ 
+.grey {
+    background: gainsboro;
+    color: grey;
+    border: 1px solid lightgray;
+}
+.red {
+    background: rgb(145, 143, 143);
+    color: white;
+    border: 1px solid gray;
+}
+
+.notes {
+    border: 1px solid red;
+
+}

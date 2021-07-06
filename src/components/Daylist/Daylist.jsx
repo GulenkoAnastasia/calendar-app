@@ -40,7 +40,7 @@ export const DayList = ({ day, year, month }) => {
     <div className="day-list">
       {days.arrOfDaysInPrevMonth.map((day, index) => {
         return (
-          <Link to={`/year/${year}/month/${month}/day/${day}`}>
+          <Link to="/">
             <Day year={year} month={month} day={day}></Day>
           </Link>
         );
@@ -54,7 +54,7 @@ export const DayList = ({ day, year, month }) => {
       })}
       {days.arrOfDaysInNextMonth.map((day, index) => {
         return (
-          <Link to={`year/${year}/month/${month}/day/${day}`}>
+          <Link to="/">
             <Day year={year} month={month} day={day}></Day>
           </Link>
         );

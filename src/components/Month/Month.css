@@ -24,21 +24,6 @@ a {
     width: 22%;
 }
 
-.cell {
-   text-align: center;
-   font-size: 12px;
-}
-
-.grey {
-    background: gainsboro;
-    color: grey;
-    border: 1px solid lightgray;
-}
-.red {
-    background: rgb(145, 143, 143);
-    color: white;
-    border: 1px solid gray;
-  }
 .monthName {
     color: lightcoral;
     text-transform: uppercase;

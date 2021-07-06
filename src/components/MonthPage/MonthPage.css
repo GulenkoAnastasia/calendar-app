@@ -32,3 +32,7 @@
       border: 1px solid grey;
       cursor: pointer;
   }
+  .monthslist {
+    border: 1px solid lightcoral;
+    color: grey;
+  }

@@ -18,7 +18,26 @@ function createDaysOfWeek () {
     return days;
 }
 
+function createLongMonthNames () {
+  const months = [];
+  const monthCount = 12;
+
+  let i = 0;
+  while (i < monthCount) {
+    months.push(i);
+    i = i + 1;
+  }
+
+  const arrOfMonthsNames = months.map((month, index) => {
+    const date = new Date(2000, index); 
+    return date.toLocaleString("en", {month: "long"});
+  });
+
+  return arrOfMonthsNames;
+}
+
 export {
     DAYS_IN_WEEK,
     createDaysOfWeek,
+    createLongMonthNames,
 }
